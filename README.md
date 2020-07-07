@@ -74,7 +74,9 @@ Inside the `NoteList` ES6 class:
 
 1. In the listener, use the `classList` API to add a CSS class "selected" to the active element
 
-2. Test the result
+2. Add some CSS styles for the CSS class "selected"
+
+3. Test the result
 
 Research: [Element.classList [English]](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 
@@ -82,7 +84,7 @@ Research: [Element.classList [Deutsch]](https://developer.mozilla.org/de/docs/We
 
 ### Assignment 6 - Removing the highlighting from the selected note
 
-You will notice that as we add the class "selected" to an item in our list, it is not removed. We must update the code so that this does not happen.
+You will notice that as we keep adding the class "selected" to an item in our list, it will slowly highlight all of the list items. We need to stop this from happening.
 
 Inside the `NoteList` ES6 class:
 
@@ -90,7 +92,7 @@ Inside the `NoteList` ES6 class:
 
 > Hint: There are many ways to do this!
 
-### Assignment 6 - Adding a "SAVE" button
+### Assignment 7 - Adding a "SAVE" button
 
 So far, we can view notes but what if we want to save the data?
 
@@ -100,6 +102,6 @@ Inside the ES6 class `NoteView`:
 
 2. When you click the button, read the current data with the value stored inside the `<textarea>`, and save it back into the `data` global object.
 
-### Assignment 7 - Saving to localStorage
+### Assignment 8 - Saving to localStorage
 
 1. Save the `data` object to the localStorage
